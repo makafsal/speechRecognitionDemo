@@ -8,7 +8,7 @@ import { useEffect } from 'react';
 export default function Home() {
   const { onStart, onStop, result, isListening, errorMessage } = useSpeechRecognition([] /** Give the grammar list  */, 20000 /** Set recording timeout */);
 
-  useEffect(() => { console.error(errorMessage); }, [errorMessage])
+  useEffect(() => { console.error(errorMessage); }, [errorMessage]);
 
   return (
     <main className="flex min-h-screen flex-col items-center justify-between p-24">
