@@ -1,19 +1,19 @@
-import { RefObject } from "react";
+import { ButtonHTMLAttributes, RefObject } from "react";
 import "./MicButton.css";
 
-interface MicButtonProps {
+interface MicButtonProps extends ButtonHTMLAttributes<any> {
   isListening?: boolean;
   onRecord?: () => void;
   ref?: RefObject<HTMLButtonElement>;
 }
 
-export const MicButton = ({ isListening, onRecord, ref }: MicButtonProps) => {
-  console.log(isListening)
+export const MicButton = ({ isListening, onRecord, ref, ...rest }: MicButtonProps) => {
   return (
     <button
       ref={ref}
       className={`micButton ${isListening ? 'animate': ''}`}
       onClick={onRecord}
+      {...rest}
     >
       <svg
         width="90"
