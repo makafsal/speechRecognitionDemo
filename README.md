@@ -1,6 +1,6 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+Visit the [demo site](https://speech-recognition-demo.vercel.app/)
 
-## Getting Started
+## Want to contribute?
 
 First, run the development server:
 
