@@ -9,7 +9,7 @@
     "lint": "next lint"
   },
   "dependencies": {
-    "@afsalk/use-speech-recognition": "^1.0.23",
+    "@afsalk/use-speech-recognition": "^2.0.2",
     "@types/node": "20.6.2",
     "@types/react": "18.2.22",
     "@types/react-dom": "18.2.7",
